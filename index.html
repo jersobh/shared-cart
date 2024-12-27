@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juntos!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Juntos!</h1>
+        <div class="connection-box">
+          <div class="peer-controls">
+            <label for="peer-id">Meu ID:</label>
+            <input type="text" id="peer-id" readonly>
+            <button id="generate-id">Copiar</button>
+          </div>
+          <div class="peer-controls">
+            <label for="connect-id">Conectar a um carrinho:</label>
+            <input type="text" id="connect-id">
+            <button id="connect-btn">Conectar</button>
+          </div>
+        </div>
+        <button id="open-cart-btn">
+            Meu Carrinho (<span id="cart-counter">0</span>)
+        </button>
+        <div id="products" class="product-grid"></div>
+        <div id="cart-container" class="cart-container hidden">
+          <button id="close-cart-btn">Fechar Carrinho</button>
+          <ul id="cart"></ul>
+        </div>
+    </div>
+      
+
+  <script src="https://cdn.jsdelivr.net/npm/peerjs/dist/peerjs.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
