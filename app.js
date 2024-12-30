@@ -206,6 +206,7 @@ products.forEach((product) => {
         <a href="${product.url}" target="_blank">${product.title}</a>
       </div>
       <div class="product-card-price">${product.price}</div>
+      <p>Promoção sujeita a disponibilidade de estoque</p>
       <button class="add-to-cart-btn">Adicionar ao carrinho</button>
     </div>
   `;
